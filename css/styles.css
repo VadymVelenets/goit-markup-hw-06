@@ -736,7 +736,6 @@ button {
   border: none;
   fill: #ffffff;
 }
-
 .modal-window-close-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -846,28 +845,15 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
 }
-.label-comment {
-}
-.label-input-privacy {
-  /* visibility: hidden; */
+.svg-checkbox {
+  position: absolute;
   box-sizing: border-box;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  background: #ffffff;
 }
-.checkbox-unchecked {
-  box-sizing: border-box;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-}
-.checkbox-checked {
-  box-sizing: border-box;
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  background: #404BBF;
-  border: 1px solid #404BBF;
-  border-radius: 2px;
+.modal-icon-white {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
 }
