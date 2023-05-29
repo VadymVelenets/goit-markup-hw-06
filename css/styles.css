@@ -610,17 +610,14 @@ button {
   gap: 24px;
 }
 .form-footer-text {
-  box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  max-width: 264px;
+  width: 264px;
   height: 40px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   color: #ffffff;
+  padding-left: 24px;
 }
 .form-footer-text:focus {
   outline: 1px solid #4d5ae5;
@@ -652,8 +649,10 @@ button {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  position: absolute;
   margin-left: 24px;
+}
+.subscribe {
+  display: flex;
 }
 .button-form:hover,
 .button-form:focus {
@@ -783,12 +782,12 @@ button {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   margin-top: 0;
+  transition: 200ms;
 }
 .label-input:hover,
 .label-input:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
   fill: #4d5ae5;
-  transition: 400ms;
 }
 .form-check-input {
   appearance: none;
@@ -842,17 +841,16 @@ button {
 }
 .svg-person {
   position: absolute;
-  margin: 11px 0 11px 16px;
-  color: #4d5ae5;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
 }
 .svg-phone,
 .svg-email {
   position: absolute;
-  margin: 8px 0 8px 16px;
-  color: #2e2f42;
-}
-.label-comment {
-  padding: 0;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
 }
 .link-privacy {
   color: #4d5ae5;
@@ -889,16 +887,12 @@ button {
   color: #ffffff;
 }
 .form-list-block {
-  display: flex;
+  position: relative;
   margin-bottom: 8px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 4px;
 }
 .form-list-block:hover,
 .form-list-block:focus {
-  border: 1px solid #4d5ae5;
   fill: #4d5ae5;
-  transition: 400ms;
 }
 .modal-icon-white {
   display: flex;
